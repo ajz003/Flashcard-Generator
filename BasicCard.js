@@ -1,11 +1,11 @@
-module.exports = BasicCard;
 
-function BasicCard (front, back) {
+var BasicCard = function (front, back, type) {
     this.front = front;
     this.back = back;
+    this.type = type;
 }
 
-var firstPresident = new BasicCard("who was the first president", "george washington")
 
-console.log(firstPresident.front);
-console.log(firstPresident.back);
+
+
+module.exports = BasicCard;
